@@ -21,6 +21,7 @@ import SignupPage from "./pages/SignupPage/SignupPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import HomePage from "./pages/HomePage/HomePage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import AddNewImage from "./pages/AddNewImage/AddNewImage";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -103,6 +104,15 @@ const App = () => {
               element={
                 <Layout>
                   <HomePage />
+                </Layout>
+              }
+            />
+            <Route
+              exact
+              path="add"
+              element={
+                <Layout>
+                  <AddNewImage />
                 </Layout>
               }
             />
