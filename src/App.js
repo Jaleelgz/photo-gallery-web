@@ -1,7 +1,8 @@
+import { Box } from "@mui/material";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return <Box>Hello</Box>;
 }
 
 export default App;
