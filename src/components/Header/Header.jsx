@@ -38,6 +38,7 @@ const Header = () => {
     dispatch(clearUser());
     handleCloseUserMenu();
     dispatch(showToast({ mode: ToastModes.success, text: "Sign out!" }));
+    navigate("/login");
   };
 
   return (

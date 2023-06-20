@@ -83,13 +83,9 @@ const SignupPage = () => {
         <Box sx={{ display: { md: "block", xs: "none" } }} className="bg">
           <Box className="welcomeContainer">
             <Box className="welcomeInnerContainer">
-              <Typography className="welcomeTxt">Welcome to </Typography>
-              <CardMedia
-                component="img"
-                alt="logo"
-                image={Images.LOGO}
-                sx={{ objectFit: "contain", maxHeight: 40, width: "auto" }}
-              />
+              <Typography className="welcomeTxt">
+                Welcome to Photo Gallery
+              </Typography>
             </Box>
             <Typography className="subTxt">Sign up with Google</Typography>
           </Box>

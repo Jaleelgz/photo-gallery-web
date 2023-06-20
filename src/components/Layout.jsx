@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <Box
         sx={{
           ...globalStyles.maxWidthContainer,
-          minHeight: "calc(100vh - 132px)",
+          minHeight: "calc(100vh - 70px)",
         }}
       >
         {children}

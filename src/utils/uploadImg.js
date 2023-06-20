@@ -39,7 +39,7 @@ export const uploadImages = async (imgs) => {
     formData.append("files", file);
   });
 
-  const uploadRes = await upload("upload/multiple_images", formData);
+  const uploadRes = await upload("upload", formData);
 
   if (!uploadRes || uploadRes?.status || uploadRes?.statusCode) {
     return [];

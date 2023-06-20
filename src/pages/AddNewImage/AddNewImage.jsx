@@ -8,6 +8,7 @@ import { postData } from "../../utils/restUtils";
 import { showToast } from "../../store/slices/ToastSlice";
 import { ToastModes } from "../../enum/ToastModes";
 import { uploadImages } from "../../utils/uploadImg";
+import Loader from "../../common/Loader/Loader";
 
 const AddNewImage = () => {
   const dispatch = useDispatch();
@@ -70,6 +71,8 @@ const AddNewImage = () => {
 
   return (
     <Box sx={globalStyles.maxWidthContainer}>
+      {loading.visibility && <Loader loadingText={loading.text} />}
+
       <Box sx={{ my: 2 }}>
         <Typography sx={{ fontWeight: "600" }}>
           {uploadData.id ? "Image" : "Add new image"}
